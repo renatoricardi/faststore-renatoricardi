@@ -8,7 +8,19 @@
     // --------------------------------------------------------
     // Colors (Branding Core)
     // --------------------------------------------------------
-    --fs-color-main-0: #f1f2f3;
+    --fs-color-main-0: #008B8B;
+    --fs-color-main-1: #20B2AA;
+    --fs-color-main-2: #48D1CC;
+    --fs-color-main-3: #40E0D0;
+    --fs-color-main-4: #00CED1;
+    --fs-color-main-5: #66CDAA;
+
+    --fs-color-accent-0: #00FFFF;
+
+    main {
+      background-color: var(--fs-color-main-1);
+    }
+
     // --------------------------------------------------------
     // Typography (Branding Core)
     // --------------------------------------------------------
