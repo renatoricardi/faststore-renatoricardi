@@ -1,0 +1,31 @@
+[
+    {
+      "name": "CustomForm",
+      "schema": {
+        "title": "Custom Form",
+        "description": "Form to get infos",
+        "type": "object",
+        "required": [
+          "title"
+        ],
+        "properties": {
+        "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "name": {
+            "title": "Placeholder Name",
+            "type": "string"
+          },
+          "email": {
+            "title": "Placeholder Email",
+            "type": "string"
+          },
+          "phone": {
+            "title": "Placeholder Phone",
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
