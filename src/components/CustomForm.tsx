@@ -31,16 +31,17 @@ export default function CustomForm(props: CustomFormProps) {
                 </header>
                 <div data-testid="fs-newsletter-content" data-fs-newsletter-content="true">
                     <div data-fs-input-field="true" data-testid="fs-input-field">
-                        <input data-fs-input="true" data-testid="fs-input" id="newsletter-name" value={props.name ? props.name : "Nome"}></input>
-                        <div data-fs-button-wrapper="true"><span>.</span></div>
-                        <input data-fs-input="true" data-testid="fs-input" id="newsletter-email" value={props.email ? props.email : "Email"}></input>
-                        <div data-fs-button-wrapper="true"><span>.</span></div>
-                        <input data-fs-input="true" data-testid="fs-input" id="newsletter-phone" value={props.phone ? props.phone : "Telefone"}></input>
-                        
-
-
+                        <input data-fs-input="true" data-testid="fs-input" id="newsletter-name"></input>
+                        <label data-fs-label="true" data-testid="fs-label">{props.name ? props.name : "Nome"}</label>
                     </div>
-                    
+                    <div data-fs-input-field="true" data-testid="fs-input-field">
+                        <input data-fs-input="true" data-testid="fs-input" id="newsletter-email"></input>
+                        <label data-fs-label="true" data-testid="fs-label">{props.email ? props.email : "Email"}</label>
+                    </div>
+                    <div data-fs-input-field="true" data-testid="fs-input-field">
+                        <input data-fs-input="true" data-testid="fs-input" id="newsletter-phone"></input>
+                        <label data-fs-label="true" data-testid="fs-label">{props.phone ? props.phone : "Telefone"}</label>
+                    </div>
                     <button data-fs-button="true" data-fs-button-inverse="true" data-fs-button-size="regular" data-fs-button-variant="secondary" data-testid="fs-button" type="submit">
                     <div data-fs-button-wrapper="true"><span>Enviar</span></div>
                     </button>
