@@ -1,8 +1,8 @@
 [
     {
-      "name": "CustomForm",
+      "name": "ContactForm",
       "schema": {
-        "title": "Custom Form",
+        "title": "ContactForm",
         "description": "Form to get infos",
         "type": "object",
         "required": [

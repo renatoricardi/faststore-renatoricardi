@@ -1,4 +1,4 @@
 
-import CustomForm from './CustomForm'
+import ContactForm from './ContactForm/ContactForm'
 
-export default { CustomForm }
+export default { ContactForm }
