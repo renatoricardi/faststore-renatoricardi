@@ -26,14 +26,21 @@ export const mutation = gql(`
       }
     `);
 
+type MutationData = {
+  submitContactForm: {
+    message: string;
+  };
+};
+
 export const ContactForm = (props: ContactFormProps) => {
-  const [submitContactForm, { data, error }] = useLazyQuery(mutation, {
-    data: { name: "", email: "", phone: ""},
+  const [submitContactForm, { data, error }] = useLazyQuery<MutationData>(mutation, {
+    data: { name: "", email: "", phone: "" },
   });
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState<string | undefined>(undefined);
 
   const onSubmit = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
@@ -52,10 +59,11 @@ export const ContactForm = (props: ContactFormProps) => {
       }
 
       if (data) {
-        console.log("Success 🎉 ~ submitContactForm response data: ", data);
         setName("");
         setEmail("");
         setPhone("");
+        setMessage(data.submitContactForm.message)
+        
       }
     },
     [submitContactForm]
@@ -87,6 +95,7 @@ export const ContactForm = (props: ContactFormProps) => {
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
         />
+        <p id="message">{message}</p>
         <UIButton type="submit" variant="primary">
           Enviar
         </UIButton>
