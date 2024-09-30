@@ -28,7 +28,7 @@ type SubmitContactFormData = {
             throw new Error("Error while sending the message");
           }
   
-          return { message: "Mensagem enviada com sucesso!" };
+          return { message: "Your message was sent successfully!" };
         } catch (error) {
           return { message: error };
         }
