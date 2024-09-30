@@ -18,7 +18,7 @@ type SubmitContactFormData = {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
-                "VtexIdclientAutCookie": "eyJhbGciOiJFUzI1NiIsImtpZCI6IjAxQjlGRDg5NENFNDAyNjg5NkY2M0QwMjJGNUJBM0IyMTMyNzNGMjAiLCJ0eXAiOiJqd3QifQ.eyJzdWIiOiJyZW5hdG8ucmljYXJkaUB2dGV4LmNvbSIsImFjY291bnQiOiJyZW5hdG9yaWNhcmRpIiwiYXVkaWVuY2UiOiJhZG1pbiIsInNlc3MiOiI5MTNmNTVlNC00YWI0LTRmMTEtYWI2ZS0wYmI1MmE0Y2Y3OWQiLCJleHAiOjE3MjU1MzkyODcsInR5cGUiOiJ1c2VyIiwidXNlcklkIjoiZGFhNjQ4MDMtOGM5ZC00ZjFiLWJlZmUtOTYyNjBhNjc1ZWM1IiwiaWF0IjoxNzI1NDUyODg3LCJpc1JlcHJlc2VudGF0aXZlIjpmYWxzZSwiaXNzIjoidG9rZW4tZW1pdHRlciIsImp0aSI6IjAzMmFmMDA1LWM1YTgtNDBiMy1iYjhkLWFkMzJiMGE5MzI5NSJ9._MbJNpvdmMJtmPPRzQVq2F5yryaCwgqaWZceyZ2m-eYzPIbUvbNSMwUwIBSl4qCqAlCFeINJdmjNRVXECYsZxQ"
+                "VtexIdclientAutCookie": "eyJhbGciOiJFUzI1NiIsImtpZCI6IjM1MzhBRTE2MTA2NTAxREZERDZBODcwQjY1MjgxNkMzMkY4MzI1RUQiLCJ0eXAiOiJqd3QifQ.eyJzdWIiOiJyZW5hdG8ucmljYXJkaUB2dGV4LmNvbSIsImFjY291bnQiOiJkcm9nYWwiLCJhdWRpZW5jZSI6ImFkbWluIiwic2VzcyI6ImE3NTQ0NzU0LTRjYjQtNDM3Ny1iMzhmLTk1NWVmNjc5ZmFlZiIsImV4cCI6MTcyNzgwMDIzNSwidHlwZSI6InVzZXIiLCJ1c2VySWQiOiJkYWE2NDgwMy04YzlkLTRmMWItYmVmZS05NjI2MGE2NzVlYzUiLCJpYXQiOjE3Mjc3MTM4MzUsImlzUmVwcmVzZW50YXRpdmUiOmZhbHNlLCJpc3MiOiJ0b2tlbi1lbWl0dGVyIiwianRpIjoiYzRhMDIxNWYtODkxMi00NGEyLWE2ZmUtOWEwOGUxYjRiNTlmIn0.i9JqwhPW0NCc3UGy2_oTLCbQc5i3daT7LVGJN7xDfpDhoH47bUfFJRDwoNQ5DRv9VtfW3zHKRAQb-evE6UXhVw"
               },
               body: JSON.stringify(input),
             }
